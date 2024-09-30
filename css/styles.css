@@ -41,7 +41,7 @@ header {
   background-color: var(--headerbg);
   padding: 0 5rem;
   height: 7rem;
-  width: 80vw;
+  width: 85vw;
   border-radius: 2rem;
   position: fixed;
   top: 1rem;
@@ -106,12 +106,6 @@ nav {
 .nav-social-links a {
   margin: 0 0.4rem;
 }
-/* .fa-square-twitter:hover, .fa-square-twitter:focus,
-.fa-square-instagram:hover, .fa-square-instagram:focus,
-.fa-envelope:hover, .fa-envelope:focus {
-  transform: scale(1.1);
-  transition: 0.2s ease-in-out;
-} */
 nav a {
   text-decoration: none;
   color: var(--link);
@@ -149,43 +143,6 @@ main {
 .large-img:hover, .large-img:focus {
   transform: scale(0.95);
 }
-/* .projects {
-  padding: 4rem;
-  background-color: var(--secondarybg);
-}
-.section-title {
-  font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--textcolor1);
-  font-size: 4rem;
-  text-align: center;
-  border: 0.2rem solid #000000;
-}
-.project-tile {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-h3 {
-  font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
-  text-align: center;
-  margin: 2rem;
-  color: var(--textcolor1);
-}
-video {
-  margin: 0 4rem;
-  border-radius: 1rem;
-  box-shadow: 0.6rem 0.6rem 0.2rem #000000;
-} */
-
-
 footer {
   display: flex;
   justify-content: space-between;

@@ -1,2 +1,2 @@
 # zeld
-a website for zeld
+a website for zeld.
