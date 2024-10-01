@@ -208,13 +208,13 @@ footer {
 }
 .iframe-tiles {
   width: fit-content;
+  margin-bottom: 4rem;
 }
 iframe {
   border-radius: 1rem;
   aspect-ratio: 16 / 9;
   width: 400px;
   height: auto;
-  display: block;
   margin: 2rem;
   box-shadow: 0 1rem 1rem #000000;
   transition: 1s ease-in-out;
@@ -223,7 +223,7 @@ iframe:hover, iframe:focus {
   transform: scale(0.99);
 }
 .iframe-info {
-  margin: 2rem 4rem;
+  margin: 1rem 4rem;
 }
 .iframe-title {
   font-family: "League Spartan", sans-serif;
@@ -232,6 +232,8 @@ iframe:hover, iframe:focus {
   font-style: normal;
   font-size: 3rem;
   text-decoration: 0.4rem underline var(--emphasis);
+  animation: textglow 4s infinite alternate;
+  transition: 2s ease-in-out;
 }
 .iframe-description {
   font-weight: 400;
@@ -240,6 +242,38 @@ iframe:hover, iframe:focus {
   margin-top: 1rem;
   line-height: 2rem;
 }
+.testimonials {
+  margin: 4rem auto 7rem;
+}
+.testimonials-title {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+}
+.testimonials-container {
+  margin-top: 1rem;
+}
+.small-pfp {
+  aspect-ratio: 1 /1;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin: -2rem 32rem;
+  box-shadow: 0 0 1rem #000000;
+}
+.testimonial-img {
+  border-radius: 1rem;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin: 1rem auto;
+  border: 0.2rem solid #ccc;
+}
+
+
+
 .whyme {
   margin-top: 4rem;
   font-family: "League Spartan", sans-serif;
@@ -262,5 +296,13 @@ iframe:hover, iframe:focus {
   }
   to {
     box-shadow: 0 0 2rem #ffffff;
+  }
+}
+@keyframes textglow {
+  from {
+    text-shadow: 0 0 -2rem #ffffff;
+  }
+  to {
+    text-shadow: 0 0 2rem #ffffff;
   }
 }
