@@ -213,7 +213,7 @@ footer {
 iframe {
   border-radius: 1rem;
   aspect-ratio: 16 / 9;
-  width: 400px;
+  width: 350px;
   height: auto;
   margin: 2rem;
   box-shadow: 0 1rem 1rem #000000;
@@ -261,7 +261,7 @@ iframe:hover, iframe:focus {
   width: 60px;
   border-radius: 50%;
   position: absolute;
-  margin: -2rem 32rem;
+  margin: -2rem 27rem;
   box-shadow: 0 0 1rem #000000;
 }
 .testimonial-img {
@@ -290,6 +290,12 @@ iframe:hover, iframe:focus {
   line-height: 2rem;
 }
 
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 @keyframes glow {
   from {
     box-shadow: 0 0 -2rem #ffffff;
