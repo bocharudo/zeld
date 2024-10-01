@@ -213,7 +213,7 @@ footer {
 iframe {
   border-radius: 1rem;
   aspect-ratio: 16 / 9;
-  width: 350px;
+  width: 300px;
   height: auto;
   margin: 2rem;
   box-shadow: 0 1rem 1rem #000000;
@@ -254,6 +254,7 @@ iframe:hover, iframe:focus {
   text-align: center;
 }
 .testimonials-container {
+  position: relative;
   margin-top: 1rem;
 }
 .small-pfp {
@@ -261,7 +262,8 @@ iframe:hover, iframe:focus {
   width: 60px;
   border-radius: 50%;
   position: absolute;
-  margin: -2rem 27rem;
+  top: -1.5rem;
+  right: -2.4rem;
   box-shadow: 0 0 1rem #000000;
 }
 .testimonial-img {
