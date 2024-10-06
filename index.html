@@ -26,37 +26,48 @@
 </head>
 <body>
   <header>
-    <div class="logo">
+    <a href="https://zeld.pages.dev">
       <img src="assets/images/transparent-logo.png"
-           width="50px"
-           alt="logo">
-    </div>
-    <span class="btnNav" onclick="menuToggleOpen()">&#9776;</span>
+          width="50px"
+          alt="logo"
+          class="logo">
+    </a>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link current-page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+          <ul class="nav-social">
+            <a href="https://twitter.com/zeldddd_">
+              <i class="fa-brands fa-square-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/zelddd_26">
+              <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:zelddd26@gmail.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </ul>
+      </ul>
+      <div class="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
   </header>
 
-  <nav id="menu">
-    <span class="btnNavClose" onclick="menuToggleClose()">&times;</span>
-    <ul class="navlinks">
-      <a href="index.html"><li class="current-page">Home</li></a>
-      <a href="projects.html"><li>Projects</li></a>
-      <a href="about.html"><li>About</li></a>
-      <a href="contact.html"><li>Contact</li></a>
-    </ul>
-    <ul class="nav-social-links">
-      <a href="https://twitter.com/zeldddd_">
-        <i class="fa-brands fa-square-twitter" aria-hidden="true"></i>
-      </a>
-      <a href="https://instagram.com/zelddd_26">
-        <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:zelddd26@gmail.com">
-        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-      </a>
-    </ul>
-  </nav>
-
-  <main id="top">
-    <section class="heading">
+  <main>
+    <section class="full-height">
       <div class="about-info">
         <h1 class="person-name">Zeld</h1>
         <p class="short-bg-info">Hello! I am a professional video editor. Since 2021, I have been Editing for a bunch of ​HUGE content creators on YouTube.</p>

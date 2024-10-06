@@ -26,34 +26,72 @@
 </head>
 <body>
   <header>
-    <div class="logo">
+    <a href="https://zeld.pages.dev">
       <img src="assets/images/transparent-logo.png"
-           width="50px"
-           alt="logo">
-    </div>
-    <span class="btnNav" onclick="menuToggleOpen()">&#9776;</span>
+          width="50px"
+          alt="logo"
+          class="logo">
+    </a>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link  current-page">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+          <ul class="nav-social">
+            <a href="https://twitter.com/zeldddd_">
+              <i class="fa-brands fa-square-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/zelddd_26">
+              <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:zelddd26@gmail.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </ul>
+      </ul>
+      <div class="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
   </header>
 
-  <nav id="menu">
-    <span class="btnNavClose" onclick="menuToggleClose()">&times;</span>
-    <ul class="navlinks">
-      <a href="index.html"><li>Home</li></a>
-      <a href="projects.html"><li>Projects</li></a>
-      <a href="about.html"><li class="current-page">About</li></a>
-      <a href="contact.html"><li>Contact</li></a>
-    </ul>
-    <ul class="nav-social-links">
-      <a href="https://twitter.com/zeldddd_">
-        <i class="fa-brands fa-square-twitter" aria-hidden="true"></i>
-      </a>
-      <a href="https://instagram.com/zelddd_26">
-        <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:zelddd26@gmail.com">
-        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-      </a>
-    </ul>
-  </nav>
+  <main>
+    <h1 class="page-title">ABOUT ME</h1>
+    <div class="large-sqr-img-container">
+      <img src="assets/images/logo.webp"
+          width="280px"
+          alt="zeld's profile picture"
+          class="large-sqr-img">
+    </div>
+    <h2 class="about-name">Who Am I?</h2>
+    <p class="about-description">
+      Hello, my name is Zeld and I'm a video editor for almost 4 years now. I'm 17 years old and currently at the senior year as a STEM student.
+    </p>
+    <p class="about-description">
+      Whenever I work on a project, I always prioritize respectful communication, fast delivery and especially - client satisfaction.
+    </p>
+    <p class="about-description">
+      If you want to try me out, just reach me out throughout my social media accounts or my email on the <a href="contact.html" class="link">Contact</a> page of my website.
+    </p>
+  </main>
+
+  <footer>
+    <p class="copy">&copy; 2024 Zeld</p>
+    <a href="https://tenkyuu.dev" class="webmaster">
+      <p>website made by rain </p>
+    </a>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
