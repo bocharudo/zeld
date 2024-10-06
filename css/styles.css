@@ -247,7 +247,7 @@ footer {
 iframe {
   border-radius: 1rem;
   aspect-ratio: 16 / 9;
-  width: 360px;
+  width: 300px;
   height: auto;
   margin: 2rem;
   box-shadow: 0 1rem 1rem #000000;
