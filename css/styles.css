@@ -126,7 +126,7 @@ nav a {
         padding: 2rem 4rem;
         background-color: var(--navbg);
         flex-direction: column;
-        border-radius: 0 0 3rem 3rem;
+        border-radius: 0 0 2rem 2rem;
         transition: 0.4s;
         z-index: -1;
       }
