@@ -87,6 +87,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 nav a {
   text-decoration: none;
@@ -131,7 +132,6 @@ nav a {
         top: 5rem;
         left: 0;
         width: 100%;
-        height: 40vh;
         padding: 2rem 4rem;
         background-color: var(--navbg);
         flex-direction: column;
@@ -181,8 +181,9 @@ main {
   align-items: center;
 }
 .large-img {
+  pointer-events: none;
   border-radius: 50%;
-  border: 0.2rem solid #000;
+  border: 0.2rem solid #ffffff;
   animation: glow 2s infinite alternate;
   transition: 2s ease-in-out;
 }
@@ -347,6 +348,7 @@ iframe:hover, iframe:focus {
   align-items: center;
 }
 .large-sqr-img {
+  pointer-events: none;
   border-radius: 10%;
   border: 0.2rem solid #ffffff;
   animation: glow 2s infinite alternate;
@@ -368,7 +370,7 @@ iframe:hover, iframe:focus {
   line-height: 2rem;
 }
 .link {
-  color: var(--link1);
+  color: var(--link2);
   text-decoration: 0.2rem underline var(--emphasis);
 }
 
