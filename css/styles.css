@@ -1,16 +1,18 @@
 :root {
-  --textcolor: #ffffff;
-  --textcolor1: #000000;
-  --mainbg: #141C25;
+  --textcolor: #000; /* #fff */
+  --textcolor1: #fff; /* #000 */
+  --mainbg: #fdfdfd; /* #141C25 */
   --secondarybg: #d4d7e7;
   --headerbg: #000000;
   --navbg: #000000;
-  --link: #ffffff;
-  --link2: #d4d7e7;
+  --link: #fff;
+  --link1: #d4d7e7;
+  --link2: #000;
   --linkhover: #000000;
-  --linkbghover: #ffffff;
-  --emphasis: #d4d7e7;
+  --linkbghover: #d4d7e7;
+  --emphasis: #2e2e2e;
   --barcolor: #ffffff;
+  --description: #4d4d4d;
 }
 *,
 ::before,
@@ -28,6 +30,10 @@ body {
   font-style: normal;
   color: var(--textcolor);
   background-color: var(--mainbg);
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgb(192, 192, 192) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(192, 192, 192) 1px, transparent 1px);
 }
 
 
@@ -51,6 +57,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.logo {
+  pointer-events: none;
 }
 .nav-menu {
   display: flex;
@@ -159,8 +168,12 @@ main {
   text-shadow: 0.2rem 0.2rem 0.2rem gray;
 }
 .short-bg-info {
-  margin: 2.2rem 0;
+  margin: 1rem 0 2rem;
   font-size: 2rem;
+  line-height: 2.7rem;
+}
+.emp {
+  text-decoration: 0.4rem underline var(--emphasis);
 }
 .large-img-container {
   display: flex;
@@ -169,13 +182,14 @@ main {
 }
 .large-img {
   border-radius: 50%;
-  border: 0.2rem solid #ffffff;
+  border: 0.2rem solid #000;
   animation: glow 2s infinite alternate;
   transition: 2s ease-in-out;
 }
-.large-img:hover, .large-img:focus {
-  transform: scale(0.95);
-}
+
+
+
+/* FOOTER */
 footer {
   position: relative;
   bottom: 0;
@@ -192,6 +206,9 @@ footer {
   font-weight: 700;
   font-style: normal;
 }
+.copy {
+  color: var(--textcolor1);
+}
 .webmaster {
   padding: 0.8rem;
   border: 0.1rem solid #ffffff;
@@ -203,7 +220,7 @@ footer {
 }
 .webmaster:focus, .webmaster:hover {
   color: var(--linkhover);
-  box-shadow: inset 400px 0 0 0 var(--linkbghover);
+  box-shadow: inset 400px 0 0 0 var(--link);
 }
 
 
@@ -227,7 +244,7 @@ footer {
   line-height: 2.4rem;
 }
 .project-subheading {
-  color: #c7c7c7;
+  color: var(--description);
   font-size: 1.4rem;
   margin: 1rem 1rem 2rem;
   letter-spacing: 0.2rem;
@@ -266,8 +283,6 @@ iframe:hover, iframe:focus {
   font-style: normal;
   font-size: 3rem;
   text-decoration: 0.4rem underline var(--emphasis);
-  animation: textglow 4s infinite alternate;
-  transition: 2s ease-in-out;
 }
 .iframe-description {
   font-weight: 400;
@@ -316,7 +331,7 @@ iframe:hover, iframe:focus {
   font-size: 4rem;
 }
 .whyme-description {
-  color: #c7c7c7;
+  color: var(--description);
   font-size: 1.4rem;
   margin: 1rem 1rem 2rem;
   letter-spacing: 0.2rem;
@@ -346,14 +361,14 @@ iframe:hover, iframe:focus {
   font-size: 4rem;
 }
 .about-description {
-  color: #c7c7c7;
+  color: var(--description);
   font-size: 1.4rem;
   margin: 1rem 1rem 2rem;
   letter-spacing: 0.2rem;
   line-height: 2rem;
 }
 .link {
-  color: var(--link2);
+  color: var(--link1);
   text-decoration: 0.2rem underline var(--emphasis);
 }
 
@@ -373,7 +388,7 @@ iframe:hover, iframe:focus {
 }
 .social-links a {
   text-decoration: none;
-  color: var(--link);
+  color: var(--link2);
 }
 
 
@@ -385,17 +400,9 @@ iframe:hover, iframe:focus {
 }
 @keyframes glow {
   from {
-    box-shadow: 0 0 -2rem #ffffff;
+    box-shadow: 0 0 -2rem #000;
   }
   to {
-    box-shadow: 0 0 2rem #ffffff;
-  }
-}
-@keyframes textglow {
-  from {
-    text-shadow: 0 0 -2rem #ffffff;
-  }
-  to {
-    text-shadow: 0 0 2rem #ffffff;
+    box-shadow: 0 0 2rem #000;
   }
 }
