@@ -12,7 +12,8 @@
   --linkbghover: #d4d7e7;
   --emphasis: #2e2e2e;
   --barcolor: #ffffff;
-  --description: #4d4d4d;
+  --description: #0c0c0c;
+  --border: #444444;
 }
 *,
 ::before,
@@ -66,6 +67,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding-bottom: 2rem;
 }
 .nav-item {
   display: flex;
@@ -87,7 +89,6 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 nav a {
   text-decoration: none;
@@ -155,6 +156,9 @@ nav a {
 main {
   padding-top: 7rem;
   margin: 7rem 4rem;
+}
+.wrapper-container.extra-height {
+  margin: auto auto 50rem;
 }
 .full-height {
   margin: auto auto 30rem;
@@ -261,18 +265,17 @@ footer {
 .iframe-tiles {
   width: fit-content;
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 iframe {
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   aspect-ratio: 16 / 9;
   width: 300px;
   height: auto;
   margin: 2rem;
-  box-shadow: 0 1rem 1rem #000000;
-  transition: 1s ease-in-out;
-}
-iframe:hover, iframe:focus {
-  transform: scale(0.99);
 }
 .iframe-info {
   margin: 1rem 4rem;
@@ -355,7 +358,6 @@ iframe:hover, iframe:focus {
   transition: 2s ease-in-out;
 }
 .about-name {
-  margin-top: 4rem;
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -392,6 +394,62 @@ iframe:hover, iframe:focus {
   text-decoration: none;
   color: var(--link2);
 }
+
+
+
+
+
+/* SCREEN SIZE: FOR TABLETS */
+@media only screen and (min-width: 600px) {
+  /* NAVIGATION */
+  .nav-menu {
+    gap: 0.7rem;
+    padding-bottom: 0;
+  }
+  .nav-item {
+    font-size: 1.4rem;
+  }
+
+
+  /* HOME */
+  .wrapper-container {
+    width: 80%;
+    max-width: 80rem;
+    border: 0.2rem solid var(--border);
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+  }
+  iframe {
+    width: 100%;
+  }
+  hr {
+    display: none
+  }
+
+
+
+  /* PROJECTS */
+  .testimonial-img {
+    border-radius: 1rem;
+    aspect-ratio: 16 / 9;
+    width: 500px;
+    height: auto;
+    margin: 1rem auto;
+    border: 0.2rem solid #ccc;
+  }
+}
+
+
+
+
+
+
+
 
 
 
